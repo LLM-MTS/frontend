@@ -1,0 +1,231 @@
+.agents-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* overflow-y: scroll;  */
+  padding: 1rem;
+  width: 400px;
+  height: auto;
+  background-color: #b2b2b2;
+}
+.agent-panel {
+  border: 1px solid #a5a5a5;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  /* min-height: 80px; */
+  /* height: 100px; */
+  max-height: 300px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #313131;
+}
+.agent-panel h3 {
+  margin: 0;
+  /* padding: 0.5rem; */
+  /* background: #f7f7f7; */
+  font-size: 12px;
+  font-weight: 600;
+}
+.panel-content {
+  padding: 0.5rem;
+  overflow: scroll;
+  /* min-height: 3rem; */
+}
+
+.panel-content p {
+  margin: 0;
+}
+.actions {
+  /* padding: 0.5rem; */
+  /* text-align: right; */
+  /* background: #fafafa; */
+}
+.actions button, .qa-agent button {
+  padding: 0.4rem 0.8rem;
+  margin-left: 0.5rem;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.actions button:hover {
+  background: #eee;
+}
+
+
+.suggestion-agent-h {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #e7e7e7;
+}
+
+.suggestion-agent-h p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.suggest-butttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.suggest-butttons button {
+  padding: 0.4rem 0.8rem;
+  /* background: white; */
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+.accept-btn {
+  background: #88eb88;
+}
+
+.accept-btn:hover {
+  background: #7dd77d;
+}
+
+.discard-btn {
+  background: #f39e9e;
+}
+
+.discard-btn:hover {
+  background: #f28c8c;
+}
+
+.emotion-indicator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #a3a3a3;
+  margin-left: 1rem;
+}
+
+.btn {
+  background-color: #a9a9a9;
+}
+
+
+
+.qa-agent {
+  /* display: flex; */
+  align-items: center;
+  /* height: 70px; */
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+
+
+.intent-agent, .emotion-agent {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  height: 50px;
+  max-height: 50px;
+}
+
+.intent-agent h3, .emotion-agent h3 {
+  display: flex;
+  align-items: center;
+  background-color: #c4c4c4;
+  height: 100%;
+  width: 72px;
+  text-align: center;
+  margin-right: 1rem;
+  font-size: 12px;
+  justify-content: center;
+}
+
+/* .emotion-agent {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+} */
+
+
+
+.summary-agent {
+  max-height: 180px;
+}
+ .suggestion-agent {
+  overflow-y: scroll;
+} 
+
+
+/* .suggestion-agent-h {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+} */ */
+
+
+.suggest-panel-content {
+  overflow-y: hidden;
+}
+
+
+.emotion-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.emotion-anger {
+  background-color: red;
+}
+
+.emotion-happy {
+  background-color: green;
+}
+
+.emotion-neutral {
+  background-color: gray;
+}
+
+.emotion-default {
+  background-color: lightgray;
+}
+
+
+.qa-h{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #efefef;
+}
+
+.qa-h p {
+  margin: 0;
+  font-weight: bold;
+}
+
+
+.qa-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.qa-label {
+  display: inline-block;
+  width: 150px; /* Установите фиксированную ширину для меток */
+  font-weight: bold;
+}
+
+.qa-value {
+  flex: 1; /* Значение занимает оставшееся пространство */
+}
+
+.qa-label {
+  font-weight: normal;
+  color: #b9b9b9; /* Цвет текста для значений */
+}
