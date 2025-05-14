@@ -1,5 +1,5 @@
 // src/components/ChatWindow.jsx
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { CoordinatorContext } from '../context/CoordinatorContext';
 import './ChatWindow.css';
 import { arrow_right } from '../assets/imports';

@@ -32,11 +32,11 @@ export function CoordinatorProvider({ children }) {
     setChatHistory(h => [...h, { role: 'user', text: message }]);
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/message', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message }),
-      });
+      const res =await fetch(`http://${window.location.hostname}:8000/message`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ message }),
+})
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       console.log('✅ Response from /message:', data);
